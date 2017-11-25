@@ -38,7 +38,7 @@
     <!-- make all links open in a new tab
     ================================================== -->
     <base target="_blank">
-    
+
 </head>
 
 <body id="top">
@@ -794,23 +794,30 @@
 
         <div class="row contact__main">
             <div class="col-eight tab-full contact__form">
-                <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/neylsoncrepalde@gmail.com">
+                <form action="https://formspree.io/neylsoncrepalde@gmail.com" method="POST">
+                    <input type="text" name="name" aria-required="true" placeholder="Name" minlength="2" class="full-width">
+                    <input type="email" name="_replyto" aria-required="true" placeholder="E-mail" class="full-width">
+                    <textarea name="message" placeholder="Message" aria-required="true" class="full-width"></textarea>
+                    <input type="submit" value="Send" style="background-color:#862121; border-color:#862121; color:#FFFFFF" class="full-width">
+                </form>
+                <!-- apagando o outro formulário
+                <form name="contactForm" id="contactForm" method="post" action="https://www.formbackend.com/f/vmmsssfb" target="_blank">
                     <fieldset>
     
                     <div class="form-field">
-                        <input name="Name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="Email" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                        <input name="email" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="Subject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        <input name="subject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
                     </div>
                     <div class="form-field">
-                        <textarea name="Message" id="contactMessage" placeholder="Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <textarea name="message" id="contactMessage" placeholder="Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button class="full-width btn--primary" type="submit">Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
@@ -824,15 +831,17 @@
                     </fieldset>
                 </form>
 
-                <!-- contact-warning -->
+                <!-- contact-warning --
                 <div class="message-warning">
                     Something went wrong. Please try again.
                 </div> 
             
-                <!-- contact-success -->
+                <!-- contact-success --
                 <div class="message-success">
                     Your message was sent, thank you!<br>
                 </div>
+
+                Termina de apagar o formulário antigo --> 
                         
             </div>
             <div class="col-four tab-full contact__infos">
